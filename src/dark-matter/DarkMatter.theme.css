@@ -3,20 +3,23 @@
 :root {
     --col-a: 22, 25, 33;
     --col-b: 16, 18, 24;
+    --col-c: 12, 14, 18;
 
     --opacity-chat: 0.8;
     --opacity-1: 0.5;
     --opacity-2: 1;
     --opacity-3: 0.9;
+    --opacity-frame: 1;
 
     --bg-overlay-chat: rgba(var(--col-a), var(--opacity-chat));
     --bg-overlay-1: rgba(var(--col-a), var(--opacity-1));
     --bg-overlay-2: rgba(var(--col-a), var(--opacity-2));
     --bg-overlay-3: rgba(var(--col-b), var(--opacity-3));
+    --bg-overlay-frame: rgba(var(--col-c), var(--opacity-frame));
 }
 
 div.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8::after {
-    background: var(--bg-overlay-app-frame, var(--background-tertiary));
+    background: var(--bg-overlay-frame);
     content: "";
     height: 22px;
     width: 100vw;
@@ -30,12 +33,34 @@ div.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8::after {
 nav.wrapper_fea3ef,
 .sidebar_a4d4d9,
 .callContainer_d880dc,
-.children_fc4f04:after {
-    background: transparent;
+.children_fc4f04:after,
+.layer_d4b6c5,
+.standardSidebarView_c25c6d,
+.root_a5ea57 {
+    background: none !important;
 }
 
-.userProfileOuterUnthemed_c69a7b {
+.userProfileOuterUnthemed_c69a7b,
+.container_cbd271,
+.member_cbd271 {
     background-color: var(--bg-overlay-1);
+}
+
+.sidebarRegionScroller_c25c6d {
+    background-color: var(--bg-overlay-3);
+}
+
+ul[data-list-id='guildsnav'] {
+    background-color: var(--bg-overlay-2);
+}
+
+.wrapper_d880dc {
+    background-color: var(--bg-overlay-chat);
+}
+
+.member_cbd271 {
+    margin-bottom: 3px;
+    border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
