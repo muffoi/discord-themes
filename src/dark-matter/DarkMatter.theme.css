@@ -1,0 +1,57 @@
+@import url(https://discordstyles.github.io/DarkMatter/DarkMatter.theme.css);
+
+:root {
+    --custom-col-a: 22, 25, 33;
+    --custom-col-b: 16, 18, 24;
+    --bg-overlay-chat: rgba(var(--custom-col-a), 0.8);
+    --bg-overlay-3: rgba(var(--custom-col-b), 0.9);
+    --bg-overlay-1: rgba(var(--custom-col-a), 0.5);
+    --bg-overlay-2: rgba(var(--custom-col-a), 1);
+}
+
+div.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8::after {
+    background: var(--bg-overlay-app-frame, var(--background-tertiary));
+    content: "";
+    height: 22px;
+    width: 100vw;
+    margin-top: -4px;
+    z-index: -1;
+    position: absolute;
+}
+
+.bg_d4b6c5,
+.app_a01fb1,
+nav.wrapper_fea3ef,
+.sidebar_a4d4d9,
+.callContainer_d880dc,
+.children_fc4f04:after {
+    background: transparent;
+}
+
+.userProfileOuterUnthemed_c69a7b {
+    background-color: var(--bg-overlay-1);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 14px !important;
+    background-clip: padding-box !important;
+}
+.userProfileInner_c69a7b,
+.platform-win .sidebar_a4d4d9 {
+    border-radius: 0;
+}
+
+.wrapper-28eC3z,
+[data-list-id='guildsnav'] [data-dnd-name] > div,
+[data-list-id='guildsnav'] svg[width="48"] {
+    width: 48px;
+    height: 48px;
+}
+
+nav[aria-label]>div>header {
+    height: 48px;
+}
+
+.mention {
+    padding: 1px 3px;
+}
