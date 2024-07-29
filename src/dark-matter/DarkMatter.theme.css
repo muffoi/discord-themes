@@ -1,12 +1,18 @@
 @import url(https://discordstyles.github.io/DarkMatter/DarkMatter.theme.css);
 
 :root {
-    --custom-col-a: 22, 25, 33;
-    --custom-col-b: 16, 18, 24;
-    --bg-overlay-chat: rgba(var(--custom-col-a), 0.8);
-    --bg-overlay-3: rgba(var(--custom-col-b), 0.9);
-    --bg-overlay-1: rgba(var(--custom-col-a), 0.5);
-    --bg-overlay-2: rgba(var(--custom-col-a), 1);
+    --col-a: 22, 25, 33;
+    --col-b: 16, 18, 24;
+
+    --opacity-chat: 0.8;
+    --opacity-1: 0.5;
+    --opacity-2: 1;
+    --opacity-3: 0.9;
+
+    --bg-overlay-chat: rgba(var(--col-a), var(--opacity-chat));
+    --bg-overlay-1: rgba(var(--col-a), var(--opacity-1));
+    --bg-overlay-2: rgba(var(--col-a), var(--opacity-2));
+    --bg-overlay-3: rgba(var(--col-b), var(--opacity-3));
 }
 
 div.typeWindows_a934d8.withFrame_a934d8.titleBar_a934d8::after {
