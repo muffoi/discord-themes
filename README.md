@@ -8,4 +8,3 @@ If you find any issues with these themes, please [file an issue](https://github.
 Include your os, Discord and Vencord version and themes used.
 
 Issues with BetterDiscord won't be fixed, sorry.
-
