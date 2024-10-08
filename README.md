@@ -1,5 +1,8 @@
+> [!WARNING]
+> This repo is archived and isn't going to recieve any further updates.
+
 # Discord Themes
-A handful of up-to-date Vencord compatible custom themes made by me ([Muffoi](https://github.com/muffoi)).
+A handful of Vencord compatible custom themes made by me ([Muffoi](https://github.com/muffoi)).
 
 - [Dark Matter](https://github.com/muffoi/discord-themes/tree/main/src/dark-matter) - a remake of an [eponymous BetterDiscord theme](https://betterdiscord.app/theme/Dark%20Matter)
 
